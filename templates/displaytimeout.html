@@ -1,0 +1,25 @@
+<style>
+    ion-nav-view {
+        background-color: transparent;
+    }
+</style>
+<ion-header-bar class="bar bar-assertive"> 
+    <h1 class="title"> The Request Timed Out </h1>
+</ion-header-bar>
+<ion-content padding="true">
+     <div class="card">
+         <div class="content-padded">
+            <div class="card">
+                <div class="item item-text-wrap">
+                    <p>The Content you requested cannot be reached. The Process was timed out. </p>
+                    <p> The Application will request the content again in 10 Seconds .</p>
+                    <p> Thank you for your patience </p>
+                </div>
+             </div>
+        </div>
+     </div>
+    <div class="card">
+            <button class="button button-full button-balanced icon-left ion-home" on-tap="goToClear()">Home</button>
+            <button class="button button-full button-positive icon-left ion-refresh" on-tap="goTo(null)">Reload</button>
+    </div>
+ </ion-content>

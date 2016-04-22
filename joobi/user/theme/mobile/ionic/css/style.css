@@ -1,0 +1,299 @@
+/**
+*
+* Site CSS style
+*
+* This CSS define the look and feel of the application in the frontend.
+* @link http://www.joobi.co
+* @copyright Distributed under the Lesser General Public License (LGPL).
+* @link http://www.gnu.org/copyleft/lesser.html
+* @author Joobi Team <css.support@joobi.co>
+*/
+
+/* -----------------------
+	--- Custom Style  ---
+ ----------------------- */
+
+
+/* align the login form in the middle 
+The login should not be more than 400px width
+*/
+div#wv_users_users_login{
+    padding-top: 50%;
+    max-width:400px;
+    margin: auto;
+}
+
+/* background color */
+ion-content.PG_users_login{
+background: #2BA3D4;
+}
+
+
+/* -----------------------
+	--- Main CSS Style ---
+ ----------------------- */
+
+/* Bootstrap overides */
+/* Panel : we add a little margin so that if we have panel into panel they dont touch each other
+.panel{margin:5px;}
+ */
+
+
+/* MESSAGES */
+#WMessage .dl-horizontal dt{width:15px;}
+#WMessage .dl-horizontal dd{margin-left:35px;}
+#WMessage dl{margin-bottom:0;}
+
+/*The icon of the message*/
+#WMessage .dl-horizontal dt{width:24px;}
+
+
+
+.bottomPagi{
+	height:75px;
+	margin-top:-40px;
+}
+
+.nagiPadding{
+padding:10px 0;
+}
+
+.headWrap{
+margin:0 10px;
+float:left;
+}
+.headVertical{
+	margin-top:5px!important;
+}
+
+/* to bonify the icon on the pane */
+form .panel-heading i{
+float:left;
+font-size: large;
+margin-right:3px;
+}
+
+
+/* ICONS give some spacing on all icons */
+i{padding: 0 4px;}
+
+
+/* search highleight */
+.search-highlight{
+	font-weight:bold;
+	font-style:italic;
+	background:yellow;
+}
+
+.vertiMrgn{
+	padding:5px 0;
+}
+
+/* ------ VIEWS ------   */
+/*
+select{width:auto!important;}
+*/
+
+/*
+.panel-title {
+margin-top: 0;
+margin-bottom: 2px;
+font-size: 16px;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 15px;
+margin-top: -1px;
+margin-left: 0;
+font-weight: 500;
+color: #999;
+background-color: #fafafa;
+border-top: 3px solid #ddd;
+text-align: center;
+}
+*/
+
+/* Wizard */
+#viewWizard {
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+#viewWizard legend i{padding: 0 8px;}
+
+/* Form */
+/* This is to float the text or icon next to the inputbox  */
+/* .form-control{float:left;} WE CAN OVERWRITE THIS IT IS BOOSTRAP FILE */
+.niceEditor{float:left;}
+.ckEditor{float:left;}
+
+
+/* Pagination in the ( Font-end ) */
+.pagi-element{margin-top: 40px;}
+.pagi-display{margin:5px 5px 0;}
+.pageNb{padding:5px 3px 0;}
+
+.filter-pagi{
+margin-left: -35px;
+margin-top: -38px;
+padding:0px;
+display: inline-flex;
+}
+
+#wz_search{
+/*	padding: 6px 5px!important;
+	width: 98%; */
+	display:block !important;
+/*	min-height: 30px; */
+}
+
+
+.pagination > li > a, .pagination > li > span{padding: 6px 8px!important;}
+.searchbox {width: 30%;}
+
+
+/* Center bottom pagination*/
+.pagination{
+	float:none!important;
+}
+.pagination-wrap{
+	float:left;
+	text-align:center;
+	margin: 0px 5px -5px;
+}
+.panel .pagination-wrap{
+	margin-top:0px;
+}
+.pagination-wrap .counter{
+	margin:0px !important;
+}
+
+/* pagination adjustment */
+#infoFilter .pagination {
+float:none!important;
+text-align: center!important;
+margin: 20px 3px!important;
+}
+
+.filter-pagi{
+padding-left:20px;
+padding-right:20px;
+display: inline-flex;
+}
+
+.filter-one-picklist{padding-left:5px;}
+
+/* legend of the listing page */
+div.legend {
+color: gray;
+font-style: italic;
+padding: 9px 0;
+text-align: center;
+}
+div.legend span{
+padding: 2px;
+}
+div.legend span i{
+padding: 4px;
+}
+
+/* Validation erroe mesasge */
+/* Error Inputbox */
+span.jberror{
+	color:#ff0000;
+/*	position:absolute; */
+	margin:7px 0 0 10px;
+	font-weight:bold;
+	font-size: 12px;
+}
+
+/* Ionic Overwriting */
+
+/* ionic hack to improve the background look */
+    ion-nav-view {
+        background-color: transparent;
+    }
+
+/*// ionic bar */
+    .fade-bar {
+        height: 20px;
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+        opacity: 0;
+        background-color: #000;
+    }
+
+/*// to show the slide box pager at the top */
+    .slider-pager {
+       bottom: initial;
+    }
+    .my-wrap-class {
+        margin-top: 8px;
+    }
+
+/*// overwriting ionic item badge position to show badge besides respective text */
+    .item .badge {
+        top: inherit;
+        right: inherit;
+        position: relative;
+        margin-left: 2px;
+    }
+
+/*// dashboard hard coded color for badge overwriting ionic */
+    .icon .badge {
+        background-color: #43cee6;
+        color: #fff;
+    }
+
+/* // Dashboard image */
+    
+    .img-rounded {
+        border-radius: 6px;
+        padding: 5px;
+    }
+
+/* // remove link underline */  
+    a:link {
+        text-decoration: none;
+        color: #8a6de9;
+    }
+/* // Error elements */    
+    .elementerr {
+        border-left-color: #ef4e3a;
+        border-left-style: solid;
+        border-left-width: thick;
+    }
+
+/* // pagination badges margins */
+    .badge.badge-calm.pagenav,
+    .badge.badge-balanced.pagenav  {
+        margin-left: : 3px;
+        margin-right: 3px;
+    }
+
+a:link p{
+	color:#8a6de9;
+}    
+
+/* breadcrumb from bootstrap */
+.breadcrumb {background: rgba(245, 245, 245, 1); border: 0px solid rgba(245, 245, 245, 1); border-radius: 4px; display: block; padding: 5px;}
+.breadcrumb li {font-size: 14px; display: inline;padding: 5px;}
+.breadcrumb a {color: rgba(66, 139, 202, 1);}
+.breadcrumb>li+li:before {color: rgba(204, 204, 204, 1); content: "\002F\00a0";}
+
+/* badge inside a button */
+.item .button span.badge {
+    display: -webkit-inline-box;
+    background-color: slategray;
+    color: white;
+}
+
+/* Ionic item text no wrap */
+.item {
+    white-space: normal;
+}
+
+/* getting margin as ionic default doesnt have margin */
+.qty .col {
+    margin:5px;
+}

@@ -1,0 +1,19 @@
+<style>
+    ion-nav-view {
+        background-color: transparent;
+    }
+</style>
+<ion-header-bar class="bar bar-assertive"> 
+    <h1 class="title"> API Key Error! </h1>
+</ion-header-bar>
+<ion-content padding="true">
+    <div class="card">
+        <div class="item item-divider" style="background-color:#ef4e3a"> Invalid API Key </div>
+        <div class="item item-text-wrap">Please check your website to make sure you have a valid API Key</div>
+        <div class="item item-text-wrap">Or "Reset" and connect to another website</div>
+    </div>
+    <div class="card">
+        <button class="button button-full button-balanced icon-left ion-refresh" on-tap="goTo(null)">Reload</button>
+        <button class="button button-full button-assertive icon-left ion-settings" on-tap="resetUrl()">Reset</button>
+    </div>
+</ion-content>

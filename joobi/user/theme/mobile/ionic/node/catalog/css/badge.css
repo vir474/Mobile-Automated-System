@@ -1,0 +1,823 @@
+.standardCircle span, .standardTopRounded span {
+padding: 0 7px;
+}
+.standardCircle span,
+.standardSquare span,
+.standardTopRounded span,
+.etiquetteVertical span,
+.etiquetteHorizontal span,
+.ribbonHorizontal span,
+.ribbonVertical span
+.leafVertical span,
+.bubbleLabel span
+{
+	font-weight:bold;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.standardCircle, .standardSquare, .standardTopRounded, .etiquetteVertical, .etiquetteHorizontal, .ribbonHorizontal, .ribbonVertical, .leafVertical, .bubbleLabel {
+	z-index: 1000;
+}
+
+
+/*---------------------------- etiquette-vertical start -------------------------------*/
+.etiquetteVertical{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+border: medium none !important;
+cursor: default;
+height: 27px;
+overflow: hidden;
+padding: 0 0 0 12px;
+position: absolute;
+transform: rotate(90deg);
+transform-origin: 0 0 0;
+border:none!important;
+}
+
+.etiquetteVertical span:before{
+content: "";
+display: block;
+height: 1px;
+left: -12px;
+position: absolute;
+top: 50%;
+width: 12px;
+}
+
+.etiquetteVertical span:after{
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: transparent transparent transparent #ffffff;
+border-image: none;
+border-style: solid;
+border-width: 0 7px 7px;
+content: "";
+display: block;
+left: 0;
+position: absolute;
+top: 0;
+}
+
+.etiquetteVertical span{
+color: #ffffff;
+display: block;
+font-size: 18px;
+padding: 0px 7px 3px 8px;
+height: 27px;
+position: relative;
+}
+
+.etiquetteVertical.bottom-left, .etiquetteVertical.bottom-right {transform: rotate(-90deg);}
+
+
+/*---------------------------- etiquette-vertical end -------------------------------*/
+
+/*---------------------------- etiquetteHorizontal start -------------------------------*/
+.etiquetteHorizontal.top-left, .etiquetteHorizontal.bottom-left {
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+border: medium none !important;
+cursor: default;
+height: 29px; /*riz fix height:27px;*/
+overflow: hidden;
+padding: 0 0 0 23px;
+position: absolute;
+}
+
+/*riz fix
+.etiquetteHorizontal.top-left span:before, .etiquetteHorizontal.bottom-left span:before{
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: transparent transparent #ffffff;
+border-image: none;
+border-style: solid;
+border-width: 1px 13px 11px 0;
+content: "";
+display: block;
+height: 1px;
+left: -7px;
+position: absolute;
+top: 50%;
+width: 20px;
+
+}
+
+*/
+
+.etiquetteHorizontal.top-left span:after, .etiquetteHorizontal.bottom-left span:after{
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: #00CC00 transparent transparent;/*riz fix border-color:transparent transparent transparent #ffffff;*/
+border-image: none;
+border-style: solid;
+border-width: 16px 15px 0;/*riz fix border-width:0 12px 12px;*/
+content: "";
+display: block;
+left: -22px;/*riz fix left:0*/
+position: absolute;
+top: 7px;/*riz fix top:7px*/
+transform:rotate(90deg);/*riz add*/
+width:15px;/*riz add*/
+}
+
+.etiquetteHorizontal.top-left span, .etiquetteHorizontal.bottom-left span{
+color: #ffffff;
+display: block;
+font: bold 18px/25px;
+padding: 4px;/*riz fix padding:4px 7px 3px 18px;*/
+position: relative;
+font-size:16px;
+}
+
+
+
+
+.etiquetteHorizontal.top-right, .etiquetteHorizontal.bottom-right{
+cursor: default;
+height: 29px; /*riz fix height:27px*/
+overflow: hidden;
+padding: 0 23px 0 0;
+position: absolute;
+background:none!important;
+border:none!important;
+}
+
+/* riz fix
+.etiquetteHorizontal.top-right span:before, .etiquetteHorizontal.bottom-right span:before{
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: transparent transparent #ffffff;
+border-image: none;
+border-style: solid;
+border-width: 0px 0px 15px 15px; /*che add  border-width:0 0 12px 12px
+content: "";
+display: block;
+height: 1px;
+position: absolute;
+right: 0;/*che add
+bottom: 0;/*che add
+width: 15px;/*che add
+
+}
+*/
+
+.etiquetteHorizontal.top-right span:after, .etiquetteHorizontal.bottom-right span:after{
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: #ff6600 transparent transparent;/* riz fix border-color:#ffffff transparent transparent transparent ; */
+border-image: none;
+border-style: solid;
+border-width: 15px 15px 0; /*riz fix border-width:15px 0px 0 15px;*/
+content: "";
+display: block;
+right: -22px; /* riz fix right:0 */
+position: absolute;
+top: 8px; /* riz fix top:0 */
+width:15px;/*che add*/
+transform:rotate(270deg); /* riz add */
+
+}
+
+.etiquetteHorizontal.top-right span, .etiquetteHorizontal.bottom-right span{
+color: #ffffff;
+display: block;
+font-size: 16px;
+padding: 4px;/*riz fix padding: 4px 20px 4px 8px*/
+position: relative;
+}
+/*---------------------------- etiquetteHorizontal end -------------------------------*/
+
+
+/*---------------------------- standardSquare start ------------------------------*/
+.standardSquare {
+line-height: 20px;
+position: absolute;
+text-align: center;
+}
+
+.standardSquare span{
+/*background: none repeat scroll 0 0 #bd0000;*/
+color: #ffffff;
+display: block;
+padding: 7px 13px;
+text-align: center;
+}
+
+/*-----------------------------standardSquare end ------------------------------*/
+
+/*-----------------------------standardCircle start----------------------------*/
+.standardCircle{
+/*background: none repeat scroll 0 0 #bd0000;*/
+border: 0 solid transparent;
+border-radius: 5em;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 -1px 0 rgba(0, 0, 0, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+color: #fff;
+margin: 0;
+line-height: 42px;
+min-height: 20px;
+min-width: 40px;
+padding: 4px;
+position: absolute;
+text-align: center;
+text-shadow: none;
+}
+
+/*---------------------------- standardCircle end-----------------------------*/
+
+/*---------------------------- standardTopRounded start------------------------------*/
+.standardTopRounded{
+/*background: none repeat scroll 0 0 #bd0000;*/
+border: medium none;
+color: #fff;
+line-height: 22px;
+margin: 0;
+min-height: 22px;
+min-width: 60px;
+padding: 4px;
+position: absolute;
+box-shadow:0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 -1px 0 rgba(0, 0, 0, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+text-align: center;
+text-shadow: none;
+}
+/*-------------------------- standardTopRounded end ---------------------------------*/
+
+/*------------------------ ribbons start ------------------------------------------*/
+.ribbonHorizontal.top-right, .ribbonHorizontal.bottom-right{
+font-size: 18px;
+line-height: 18px;
+overflow: visible;
+position: absolute;
+right: 29px!important; /*che fix right: 0!important; */
+background:none!important;
+}
+.ribbonHorizontal.top-right:before, .ribbonHorizontal.bottom-right:before{
+border-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3) transparent;
+border-style: solid;
+border-width: 19px;
+content: "";
+display: block;
+height: 0;
+left: 68px;
+position: absolute;
+top: 3px;
+width: 0;
+}
+
+.ribbonHorizontal.top-right:after, .ribbonHorizontal.bottom-right:after{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+bottom: -3px;
+content: "";
+display: block;
+height: 3px;
+left: 106px;
+position: absolute;
+right: 3px;
+}
+.ribbonHorizontal.top-right span, .ribbonHorizontal.bottom-right span{
+background: none repeat scroll 0 0 #0089d0;
+color: #fff;
+display: block;
+margin-left: 89px;
+overflow: visible;
+padding: 10px;
+position: relative;
+text-decoration: none;
+}
+
+.ribbonHorizontal.top-right span:before, .ribbonHorizontal.bottom-right span:before{
+/*border-color: #0089d0 transparent;*/
+border-style: solid;
+border-width:19px;
+content: "";
+display: block;
+height: 0;
+left: -19px;
+position: absolute;
+top: 0;
+width: 0;
+}
+
+.ribbonHorizontal.top-right span:after, .ribbonHorizontal.bottom-right span:after{
+border-right: 15px solid transparent;
+border-top: 15px solid #004a70;
+bottom: -15px;
+content: "";
+display: block;
+height: 0;
+position: absolute;
+right: 0;
+width: 0;
+}
+
+.ribbonHorizontal.top-left, .ribbonHorizontal.bottom-left{
+font-size: 18px;
+line-height: 18px;
+overflow: visible;
+position: absolute;
+left: 28px !important; /*che fix left: 0!important; */
+background:none!important;
+}
+.ribbonHorizontal.top-left:before, .ribbonHorizontal.bottom-left:before{
+border-color: rgba(0, 0, 0, 0.3) transparent rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3);
+border-style: solid;
+border-width: 19px;
+content: "";
+display: block;
+height: 0;
+left: 43px;
+position: absolute;
+top: 3px;
+width: 0;
+}
+
+.ribbonHorizontal.top-left:after, .ribbonHorizontal.bottom-left:after{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+bottom: -3px;
+content: "";
+display: block;
+height: 3px;
+left: 15px;
+position: absolute;
+right: 47px;
+}
+.ribbonHorizontal.top-left span, .ribbonHorizontal.bottom-left span{
+background: none repeat scroll 0 0 #0089d0;
+color: #fff;
+display: block;
+/*height: 58px;*/
+margin-right: 29px;
+overflow: visible;
+padding: 10px;
+position: relative;
+text-decoration: none;
+}
+
+.ribbonHorizontal.top-left span:before, .ribbonHorizontal.bottom-left span:before{
+border-color: #0089d0 transparent;
+border-style: solid;
+border-width: 19px;
+content: "";
+display: block;
+height: 0;
+left: 43px;
+position: absolute;
+top: 0;
+width: 0;
+}
+
+.ribbonHorizontal.top-left span:after, .ribbonHorizontal.bottom-left span:after{
+border-left: 15px solid transparent;
+border-top: 15px solid #004a70;
+bottom: -15px;
+content: "";
+display: block;
+height: 0;
+position: absolute;
+left: 0;
+width: 0;
+}
+
+/*--*/
+.ribbonVertical.top-right, .ribbonVertical.bottom-right{
+font-size: 18px;
+line-height: 18px;
+overflow: visible;
+position: absolute;
+right: 52px!important; /*che fix right: -17px!important;*/
+background:none!important;
+}
+.ribbonVertical.top-right:before, .ribbonVertical.bottom-right:before{
+border-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3) transparent;
+border-style: solid;
+border-width: 19px;
+content: "";
+display: block;
+height: 0;
+left: 68px;
+position: absolute;
+top: 3px;
+width: 0;
+}
+
+.ribbonVertical.top-right:after, .ribbonVertical.bottom-right:after{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+bottom: -3px;
+content: "";
+display: block;
+height: 3px;
+left: 106px;
+position: absolute;
+right: 3px;
+}
+.ribbonVertical.top-right span, .ribbonVertical.bottom-right span{
+background: none repeat scroll 0 0 #0089d0;
+color: #fff;
+display: block;
+margin-left: 88px;
+overflow: visible;
+padding: 10px;
+position: relative;
+text-decoration: none;
+}
+
+.ribbonVertical.top-right span:before, .ribbonVertical.bottom-right span:before{
+/*border-color: #0089d0 transparent;*/
+border-style: solid;
+border-width:19px;
+content: "";
+display: block;
+height: 0;
+left: -19px;
+position: absolute;
+top: 0;
+width: 0;
+}
+
+.ribbonVertical.top-right span:after, .ribbonVertical.bottom-right span:after{
+border-right: 15px solid transparent;
+border-top: 15px solid #004a70;
+bottom: -15px;
+content: "";
+display: block;
+height: 0;
+position: absolute;
+right: 0;
+width: 0;
+}
+
+.ribbonVertical.top-left, .ribbonVertical.bottom-left{
+font-size: 18px;
+line-height: 18px;
+overflow: visible;
+position: absolute;
+left: 45px!important;/*left: 12px!important;*/
+background:none!important;
+}
+.ribbonVertical.top-left:before, .ribbonVertical.bottom-left:before{
+border-color: rgba(0, 0, 0, 0.3) transparent rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3);
+border-style: solid;
+border-width: 19px;
+content: "";
+display: block;
+height: 0;
+left: 44px;
+position: absolute;
+top: 4px;/*che fix*/
+width: 0;
+}
+
+.ribbonVertical.top-left:after, .ribbonVertical.bottom-left:after{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+bottom: -3px;
+content: "";
+display: block;
+height: 3px;
+left: 15px;
+position: absolute;
+right: 46px;
+width:29px;/*che fix*/
+}
+.ribbonVertical.top-left span, .ribbonVertical.bottom-left span{
+background: none repeat scroll 0 0 #0089d0;
+color: #fff;
+display: block;
+/*height: 58px;*/
+margin-right: 29px;
+overflow: visible;
+padding: 10px;
+position: relative;
+text-decoration: none;
+}
+
+.ribbonVertical.top-left span:before, .ribbonVertical.bottom-left span:before{
+border-color: #0089d0 transparent;
+border-style: solid;
+border-width: 19px;
+content: "";
+display: block;
+height: 0;
+left: 44px;
+position: absolute;
+top: 0;
+width: 0;
+}
+
+.ribbonVertical.top-left span:after, .ribbonVertical.bottom-left span:after{
+border-left: 15px solid transparent;
+border-top: 15px solid #004a70;
+bottom: -15px;
+content: "";
+display: block;
+height: 0;
+position: absolute;
+left: 0;
+width: 0;
+}
+
+.ribbonVertical.top-left, .ribbonVertical.bottom-right{transform:rotate(90deg);}
+ .ribbonVertical.top-right, .ribbonVertical.bottom-left {transform:rotate(-90deg);}
+/*------------------------ ribbons end ----------------------------------------------*/
+
+
+/*------------------------- positions style -----------------------------------*/
+.top-left{top:29px; left:29px;}
+.top-right{top:29px; right:29px;}
+.bottom-left{bottom:29px; left:29px;}
+.bottom-right{bottom:29px;right:29px;}
+/*-----etiquetteVertical listing page----*/
+.catalogItem .etiquetteVertical.top-left {top:0;left:55px;}/*che fix top:0;right:55px;*/
+.catalogItem .etiquetteVertical.top-right {top:0;right:-40px;}/*che fix top:0;right:-27px;*/
+.catalogItem .etiquetteVertical.bottom-left {bottom: -6px;left: 26px;}/*che fix bottom: -6px;right: 3px;*/
+.catalogItem .etiquetteVertical.bottom-right {bottom: -6px;right: -13px;}/*che fix bottom: -6px;right: 3px;*/
+/*-----etiquetteVertical item page----*/
+.etiquetteVertical.top-left {top:0;left:106px;}/*che fix top:0;right:55px;*/
+.etiquetteVertical.top-right {top:0;right:-1px;}/*che fix top:0;right:-27px;*/
+.etiquetteVertical.bottom-left {bottom:66px;left: 60px;}/*che fix bottom: -6px;right: 3px;*/
+.etiquetteVertical.bottom-right {bottom:66px;right: 60px;}/*che fix bottom: -6px;right: 3px;*/
+
+/*-----etiquetteHorizontal item page----*/
+.etiquetteHorizontal.top-left {top:26px;left:48px;}/*riz fix left:28px;*/
+.etiquetteHorizontal.bottom-left {bottom:116px;left:27px;}/*che fix*/
+.etiquetteHorizontal.top-right {top:26px;right:48px;}/*riz fix right:27px */
+.etiquetteHorizontal.bottom-right {bottom:116px;right:27px;}/*che fix*/
+
+/*-----etiquetteHorizontal listing page----*/
+.catalogItem .etiquetteHorizontal.top-left {top:17px;left:5px;}/*che fix*/
+.catalogItem .etiquetteHorizontal.bottom-left {bottom:44px;left:0;}/*che fix*/
+.catalogItem .etiquetteHorizontal.top-right {top:17px;right:5px;}/*che fix*/
+.catalogItem .etiquetteHorizontal.bottom-right {bottom:44px;right:1px;}/*che fix*/
+
+/*-----standardCircle listing page----*/
+.catalogItem .standardCircle.top-left{top:17px;left:28px;}/*che fix*/
+.catalogItem .standardCircle.top-right{top:17px;right:28px;}/*che fix*/
+.catalogItem .standardCircle.bottom-left{bottom:34px;left:26px;} /*che fix*/
+.catalogItem .standardCircle.bottom-right{bottom:34px;right:32px;}/*che fix 12px/-1px to 144 /42*/
+
+/*-----standardCircle item page----*/
+.standardCircle.top-left{top:19px;left:60px;}/*che fix*/
+.standardCircle.top-right{top:19px;right:60px;}/*che fix*/
+.standardCircle.bottom-left{bottom:144px;left:42px;} /*che fix*/
+.standardCircle.bottom-right{bottom:144px;right:42px;}/*che fix 12px/-1px to 144 /42*/
+
+/*-----standardTopRounded listing page----*/
+.catalogItem .standardTopRounded.top-left{top:17px;left:28px; border-radius: 5px 5px 0 0;}/*che fix*/
+.catalogItem .standardTopRounded.top-right{top:17px;right:28px; border-radius: 5px 5px 0 0;}/*che fix*/
+.catalogItem .standardTopRounded.bottom-left{bottom:34px;left:32px; border-radius: 0 0 5px 5px;}/*che fix*/
+.catalogItem .standardTopRounded.bottom-right{bottom:34px;right:32px; border-radius: 0 0 5px 5px;}/*che fix*/
+/*-----standardTopRounded item page----*/
+.standardTopRounded.top-left{top:16px;left:67px; border-radius: 5px 5px 0 0;}/*che fix*/
+.standardTopRounded.top-right{top:16px;right:67px; border-radius: 5px 5px 0 0;}/*che fix*/
+.standardTopRounded.bottom-left{bottom:116px;left:67px; border-radius: 0 0 5px 5px;}/*che fix*/
+.standardTopRounded.bottom-right{bottom:116px;right:67px; border-radius: 0 0 5px 5px;}/*che fix*/
+/*-----standardsquare item page----*/
+.standardSquare.top-right{top:17px;right:28px;}/*che fix*/
+.standardSquare.top-left{top:17px;left:28px;}/*che fix*/
+.standardSquare.bottom-left{bottom:144px; left:42px;}/*che fix*/
+.standardSquare.bottom-right{bottom:144px; right:42px;}/*che fix*/
+/*-----standardsquare listing page----*/
+.catalogItem .standardSquare.top-right{top:17px;right:28px;}/*che fix*/
+.catalogItem .standardSquare.top-left{top:17px;left:28px;}/*che fix*/
+.catalogItem .standardSquare.bottom-left{bottom:34px; left:32px;}/*che fix*/
+.catalogItem .standardSquare.bottom-right{bottom:34px; right:32px;}/*che fix*/
+
+/*-----ribbonHorizontal listing page----*/
+/*.ribbonRight.top-right, .ribbonLeft.top-left{top: 18px!important;}
+.ribbonRight.bottom-right, .ribbonLeft.bottom-left{bottom: 40px!important;}*/
+.catalogItem .ribbonHorizontal.top-right{top: 16px!important;right: 1px!important;}/* che fix top: 18px!important;*/
+.catalogItem .ribbonHorizontal.bottom-right{bottom: 72px!important;right: 1px!important;}/* che fix bottom: 40px!important;*/
+.catalogItem .ribbonHorizontal.top-left{top: 16px!important;left: 1px!important;}/* che fix top: 18px!important;*/
+.catalogItem .ribbonHorizontal.bottom-left{bottom: 122px!important;}/* che fix bottom: 40px!important;*/
+/*-----ribbonHorizontal item page----*/
+/*.ribbonRight.top-right, .ribbonLeft.top-left{top: 18px!important;}
+.ribbonRight.bottom-right, .ribbonLeft.bottom-left{bottom: 40px!important;}*/
+.ribbonHorizontal.top-right{top: 24px!important;}/* che fix top: 18px!important;*/
+.ribbonHorizontal.bottom-right{bottom: 122px!important;}/* che fix bottom: 40px!important;*/
+.ribbonHorizontal.top-left{top: 29px!important;}/* che fix top: 18px!important;*/
+.ribbonHorizontal.bottom-left{bottom: 122px!important;}/* che fix bottom: 40px!important;*/
+
+/*-----ribbonVertical listing page----*/
+
+.catalogItem .ribbonVertical.top-right{top: 40px!important;right: -15px!important;}/* che fix top: 39px!important;*/
+.catalogItem .ribbonVertical.bottom-right{bottom: 58px!important;right: -26px!important;}/* che fix 60px !important;*/
+.catalogItem .ribbonVertical.top-left{top: 8px!important;left:10px!important;}
+.catalogItem .ribbonVertical.bottom-left{bottom: 30px!important;left: 2px!important;} /* che fix 28px !important;*/
+
+/*-----ribbonVertical item page----*/
+
+.ribbonVertical.top-right{top: 40px!important;}/* che fix top: 39px!important;*/
+.ribbonVertical.bottom-right{bottom: 131px!important;}/* che fix 60px !important;*/
+.ribbonVertical.top-left{top: 8px!important;}
+.ribbonVertical.bottom-left{bottom: 101px!important;} /* che fix 28px !important;*/
+
+/*------------------------ Leaf Vertical start ------------------------------------------*/
+.leafVertical {
+/*    background: none repeat scroll 0 0 #e81f00; */
+    border-radius: 28px 4px;
+    box-sizing: border-box;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 20px;
+    position: absolute;
+    transform: rotateZ(-90deg) translateX(-50%);
+    
+}
+/*-------------listing postion----------*/
+.catalogItem .leafVertical.top-left {
+    top: 1px; /*che fix -5px to 1*/
+    left: 6px; /*che fix 17px to 46*/
+}
+.catalogItem .leafVertical.top-right {
+    top: 1px; /*che fix -5px to 1*/
+    right: 6px; /*che fix 17px to 46*/
+}
+.catalogItem .leafVertical.bottom-left {
+    bottom: 86px; /*che fix 93px to 144*/
+    left: 4px; /*che fix 17px to 42*/
+}
+.catalogItem .leafVertical.bottom-right {
+    bottom: 86px; /*che fix 93px to 144*/
+    right: 4px; /*che fix 17px to 42*/
+}
+/*-------------item page----------*/
+.leafVertical.top-left {
+    top: 1px; /*che fix -5px to 1*/
+    left: 46px; /*che fix 17px to 46*/
+}
+.leafVertical.top-right {
+    top: 1px; /*che fix -5px to 1*/
+    right: 46px; /*che fix 17px to 46*/
+}
+.leafVertical.bottom-left {
+    bottom: 144px; /*che fix 93px to 144*/
+    left: 42px; /*che fix 17px to 42*/
+}
+.leafVertical.bottom-right {
+    bottom: 144px; /*che fix 93px to 144*/
+    right: 42px; /*che fix 17px to 42*/
+}
+/*------------------------ Leaf Vertical end ----------------------------------------------*/
+
+/*------------------------ bubble start ------------------------------------------*/
+.bubbleLabel {
+   border-radius: 50%;
+/*    color: #ffffff; */
+/*    font-weight: 400; */
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    width: 44px;
+    z-index: 2;
+}
+.bubbleLabel span:before {
+    border-bottom: 7px solid #f60;
+    left: -3px; 
+    border-left: 11px solid rgba(0, 0, 0, 0);
+    border-right: 11px solid rgba(0, 0, 0, 0);
+    bottom: 4px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+}
+
+/*-------listing page--------*/
+.catalogItem .bubbleLabel.top-left {
+    top: 19px;/* che fix */
+    left: 25px;/* che fix */
+}
+.catalogItem .bubbleLabel.top-right {
+    top: 19px;/* che fix */
+    right: 25px;/* che fix */
+}
+.catalogItem .bubbleLabel.bottom-left {
+    bottom: 39px;/* che fix */
+    left: 31px;/* che fix */
+}
+.catalogItem .bubbleLabel.bottom-right {
+    bottom: 39px;/* che fix */
+    right: 31px;/* che fix */
+}
+/*-------item page--------*/
+.bubbleLabel.top-left {
+    top: 25px;/* che fix */
+    left: 66px;/* che fix */
+}
+.bubbleLabel.top-right {
+    top: 25px;/* che fix */
+    right: 63px;/* che fix */
+}
+.bubbleLabel.bottom-left {
+    bottom: 116px;/* che fix */
+    left: 66px;/* che fix */
+}
+.bubbleLabel.bottom-right {
+    bottom: 116px;/* che fix */
+    right: 63px;/* che fix */
+}
+
+.badgeRed.bubbleLabel span {
+    background: #f00;
+	color: #fff;	/* white */
+}
+.badgeRed.bubbleLabel span:before {
+    border-color: #f00 transparent;
+
+}
+.badgeBlue.bubbleLabel span {
+    background: #00f;
+	color: #fff;	/* white */
+}
+.badgeBlue.bubbleLabel span:before {
+    border-color: #00f transparent;
+
+}
+.badgeOrange.bubbleLabel span {
+    background: #f60;
+	color: #fff;	/* white */
+}
+.badgeOrange.bubbleLabel span:before {
+    border-color: #f60 transparent;
+}
+.badgeGreen.bubbleLabel span {
+    background: #0c0;
+	color: #fff;	/* white */
+}
+.badgeGreen.bubbleLabel span:before {
+    border-color: #0c0 transparent;
+}
+.badgeLightBlue.bubbleLabel span {
+    background: #0cf;
+	color: #fff;	/* white */
+}
+.badgeLightBlue.bubbleLabel span:before {
+    border-color: #0cf transparent;
+}
+/*------------------------ Bubbles end ----------------------------------------------*/
+
+
+
+
+/*------------------------positions style end ---------------------------------*/
+
+
+
+
+/*------------------------ colors start ----------------------------------*/
+.badgeRed{background: #FF0000;}
+.badgeBlue{background: #0000FF;}
+.badgeOrange{background:#FF6600;}
+.badgeGreen{background:#00CC00;}
+.badgeLightBlue{background: #00CCFF;}
+.badgeWhite{background:#FFFFFF; border:1px solid #999999; color:#999999;}
+
+.badgeGreen.etiquetteVertical span:before, .badgeGreen.etiquetteVertical span {background:#00CC00;}
+.badgeOrange.etiquetteVertical span:before, .badgeOrange.etiquetteVertical span {background:#FF6600;}
+.badgeRed.etiquetteVertical span:before, .badgeRed.etiquetteVertical span {background:#FF0000;}
+.badgeBlue.etiquetteVertical span:before, .badgeBlue.etiquetteVertical span {background:#0000FF;}
+.badgeLightBlue.etiquetteVertical span:before, .badgeLightBlue.etiquetteVertical span {background:#00CCFF;}
+
+.badgeGreen.etiquetteHorizontal span:before, .badgeGreen.etiquetteHorizontal span {background:#00CC00;}
+.badgeOrange.etiquetteHorizontal span:before, .badgeOrange.etiquetteHorizontal span {background:#FF6600;}
+.badgeRed.etiquetteHorizontal span:before, .badgeRed.etiquetteHorizontal span {background:#FF0000;}
+.badgeBlue.etiquetteHorizontal span:before, .badgeBlue.etiquetteHorizontal span {background:#0000FF;}
+.badgeLightBlue.etiquetteHorizontal span:before, .badgeLightBlue.etiquetteHorizontal span {background:#00CCFF;}
+
+/*.badgeGreen.etiquetteRight span:before, .badgeGreen.etiquetteRight span {background:#00CC00;}
+.badgeOrange.etiquetteRight span:before, .badgeOrange.etiquetteRight span {background:#FF6600;}
+.badgeRed.etiquetteRight span:before, .badgeRed.etiquetteRight span {background:#FF0000;}
+.badgeBlue.etiquetteRight span:before, .badgeBlue.etiquetteRight span {background:#0000FF;}
+.badgeLightBlue.etiquetteRight span:before, .badgeLightBlue.etiquetteRight span {background:#00CCFF;}*/
+
+.badgeRed.ribbonHorizontal span{background:#ff0000;}
+.badgeRed.ribbonHorizontal span:before{border-color:#ff0000 transparent;}
+.badgeBlue.ribbonHorizontal span{background:#0000ff;}
+.badgeBlue.ribbonHorizontal span:before{border-color:#0000ff transparent;}
+.badgeOrange.ribbonHorizontal span{background:#ff6600;}
+.badgeOrange.ribbonHorizontal span:before{border-color:#ff6600 transparent;}
+.badgeGreen.ribbonHorizontal span{background:#00cc00;}
+.badgeGreen.ribbonHorizontal span:before{border-color:#00cc00 transparent;}
+.badgeLightBlue.ribbonHorizontal span{background:#00CCFF;}
+.badgeLightBlue.ribbonHorizontal span:before{border-color:#00CCFF transparent;}
+
+.badgeRed.ribbonVertical span{background:#ff0000;}
+.badgeRed.ribbonVertical span:before{border-color:#ff0000 transparent;}
+.badgeBlue.ribbonVertical span{background:#0000ff;}
+.badgeBlue.ribbonVertical span:before{border-color:#0000ff transparent;}
+.badgeOrange.ribbonVertical span{background:#ff6600;padding-right:23px;}
+.badgeOrange.ribbonVertical span:before{border-color:#ff6600 transparent;}
+.badgeGreen.ribbonVertical span{background:#00cc00;}
+.badgeGreen.ribbonVertical span:before{border-color:#00cc00 transparent;}
+.badgeLightBlue.ribbonVertical span{background:#00CCFF;}
+.badgeLightBlue.ribbonVertical span:before{border-color:#00CCFF transparent;}
+/*------------------------ colors end -------------------------------------*/

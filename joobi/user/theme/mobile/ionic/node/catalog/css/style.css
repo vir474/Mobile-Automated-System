@@ -1,0 +1,530 @@
+/* ========= CATALOG - HOME PAGE ================================================ */
+#siteBanner{
+	padding-top:10px;
+	position:relative;
+	text-align:center;
+}
+
+
+div#accordionHorizontal .panel-body, div#accordionVertical .panel-body{
+padding: 0!important;
+}
+
+.widgetBox .pagination {
+margin: 0!important;
+}
+
+/* show all button floated to the left for convenience */
+.showAll{
+	float: none;
+    text-align: center;
+}
+
+div.searchLocationBox, div.searchLocationPicklist{float:left;}
+div.searchLocationPicklist{margin-left:5px!important; margin-bottom:5px !important;height:29px;}
+div.searchLocation div{}
+div.searchVendor, div.searchCategory, div.searchType, div.searchLocation, div.searchBttn, div.searchZip{
+	float:left;
+	margin:10px 0;
+}
+div.searchBttn{
+	margin-left:5px !important;
+}
+
+div.searchZip div{
+	width:80px;
+	float:left;
+}
+div.searchZip div.pickList{
+	width:auto;
+}
+div.searchZip{
+	display: inline-flex;
+}
+
+div.searchInputBg{
+	margin:10px 0;
+	float:left;
+}
+
+
+/* Category */
+#siteHeader{margin-bottom:10px;}
+#subProdTitle, #subCatTitle, #siteDesc, #editable{padding:5px;}
+
+/* Social Icons */
+.socialIcon{
+	display:inline-block;
+	margin-right:5px;
+	margin-top:2px;
+}
+
+.socialText{float:left;margin:5px;}
+#siteShareOnline{margin-top:10px;}
+
+/* product / items page */
+#siteHeading{
+margin-top:-10px;
+}
+
+
+/* Badge on Iten */
+span.titleFeatured, span.titleOnSale, span.titleNew, span.titleDiscounted{
+	vertical-align:super;
+	padding:0 5px;
+	font-size:0.6em;
+	text-decoration:none;
+}
+span.titleFeatured{color:#3fa705;}
+span.titleOnSale{color:#ff2313;}
+span.titleNew{color:orange;}
+span.titleDiscounted{color:green;}
+
+
+/* stock */
+#stockInfo{margin-top:3px;}
+span.inStock{
+color:#74df00;	/* Che fix replaced color:blue;  */
+font-size: 17px;
+} /* Che fix */
+
+/* site terms and conditions */
+.siteTerms{margin-top:6px;}
+
+/* introduction */
+.siteIntroductionContent{
+	padding:10px 4px 4px;
+	font-size: 0.9em;
+}
+
+/* Promo message */
+.sitePromoContent{;
+	padding-bottom: 10px;
+}
+
+/* auction specific */
+.auctionPlaceBidBox, .auctionPlaceBidBttn{float:left;}
+.auctionPlaceBidBttn{
+	margin-left:15px;
+}
+
+/* subscription specific */
+div.subcriptionAttribute{padding: 10px;clear:both;}
+span.attributeName{font-size:1.3em;}
+.attributeTotalValue{color: #972B28; font-size: 18px;}
+.attributeButton{margin-top:5px;}
+
+/* Product attributes */
+#cartOption{padding-bottom:10px}
+.cartOptionContent{margin-bottom:4px;clear:both;}
+.cartOptionHeading{color:#707070;padding:3px 10px 3px 0;min-width:150px;}
+.cartOptionMain{padding:3px 0;float:left;}
+
+/* product price */
+.priceLayout label.control-label, .siteTerms label.control-label{
+text-align:left!important;
+font-weight: normal!important;
+}
+.priceLayout .control-group, .siteTerms .control-group{
+    margin-bottom: 8px !important;
+}
+
+.productCurrency{
+	font-size:1.2em;
+	color:#000;
+	text-align:right;
+}
+.productTax{
+	color:grey;
+	font-size:.7em;
+	clear:both;
+}
+#sitePrice .productCurrency{
+color: #575757;
+margin-bottom: 22px; /* Che added  */
+margin-top: 5px; /* Che added  */
+display:inline-block;
+margin-bottom:0;
+}
+
+span.productOnSaleOld, .priceStrikeOut div.productPrice{
+	text-decoration:line-through;
+	color:rgba(145, 145, 145, 0.5) !important; /* color:#a7a7a7!important; */ /* Che fix replaced color:red !important;  */	
+	margin-bottom: 20px; /* Che add  */	
+    margin-top: 0; /* Che add margin-top: 6px;   */
+margin-bottom:0;
+ font-size: 0.8em;
+
+}
+
+span.productOnSaleNew, span#productDiscount, span#productDiscountSaved{
+	color:#ff8182; /* Che fix replaced color:#db5800;  */
+	font-weight:bold;
+	display:inline-block;
+	margin-left: 8px;
+}
+#productDiscount{
+font-size:1.4em; /* Che fix replaced font-size:1.2em;  */
+}
+
+span#productDiscountSaved{
+	color:gray;
+	font-size:0.9em;
+	margin-left: 8px;
+	font-weight: normal;
+}
+
+span#productDiscount, span#productDiscountSaved{
+	text-align: left;
+	margin-left: 10px;
+margin-left:0;
+}
+
+/* product quantity */
+#catalogquantity{
+	float:left;
+    text-align: center;
+    width: auto;
+    font-size: 16px;
+    height: 39px;
+    margin-right: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.quantity-adder span{
+    background-color: #E8E8E8;
+    border-radius: 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    height: 19px;
+    line-height: 1;
+	float:left;
+    text-align: center;
+    width: 19px;
+}
+
+
+/** catalog sign **/
+.quantity-adder span.add-down{
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: -19px;
+	}
+
+#minusgray{display:none;}
+#minusquantity{display:block!important;}
+
+
+
+/* item comments */
+#siteComment{
+	padding:10px 0;
+}
+
+
+
+/* ========= BADGETS STYLE ================================================ */
+
+/* Standard Badge */
+.itemStandard, .categoryStandard, .vendorStandard{
+/*	text-align:center; */
+	text-align: -moz-center;
+}
+.vertiMrgn{
+	padding:5px 0;
+}
+
+.sitePrice, .siteBid{
+font-weight: bold;
+font-size: 1.6em; /* Che fix replaced font-size: 1.2em;  */
+display: inline-flex;
+}
+.cntdwnText{
+margin-left:5px;
+}
+
+.siteCountDown{
+font-size: 1.1em;
+display: inline;
+}
+
+.siteDesc{
+	padding:5px;
+}
+
+/* Pop over when mouse over */
+.badgeVignette {
+	margin:0 auto !important;
+	left:0 !important;
+	right:0 !important;
+	display:none;
+	z-index:1000;
+	position:absolute;
+	width:auto;
+background:#eff7fc;/*che add*/
+padding-top:15px;/*che add*/
+padding-bottom:15px;/*che add*/
+}
+/* Pop over when mouse over */
+.badgeVignette .siteRightInfo{ /*che add*/
+padding:5px 10px;/*che add*/
+}
+
+/*
+.siteShare{
+	width:185px;
+	height:auto;
+}
+div.socialOverlay{
+	padding: 30px;
+	background-color: #F6F9FC;
+}
+*/
+
+/* multi cart */
+.basketItem img{
+	padding:5px;
+	}
+
+
+
+/* Advance Search */
+.advSearchFrame{
+}
+.advSearchFilter{
+padding: 5px;
+margin: 5px;
+float:left;
+/* border:1px solid #D4DEE8;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px; */
+}
+.advSearchButton{
+padding: 5px;
+margin: 5px;
+clear:both;
+}
+.advSearchElement{
+	display: inline;
+}
+.priceInput{
+	width:60px !important;
+}
+.piceValue{
+	width:80px !important;
+}
+
+.advanceSearch{
+	width:110px !important;
+}
+.advSearchTo{
+padding: 5px;
+}
+
+
+/* ========= CARROUSEL AND ACCORDION STYLE ================================================ */
+
+.accordionVerticalInnerSpan{ height: 53px!important;}
+
+/** Category Tree **/
+.categoryChild{
+	width: 85%;
+	margin-left: 10%;
+}
+div.categoryChild h4{
+	font-size: 1em;
+}
+
+.catsiteImage, .catSiteRightInfo{
+float:left;
+}
+.catsiteImage{
+padding: 5px;
+}
+
+
+
+#ImageBox a{
+width:100% !important;
+text-align:center;
+}
+.img-rounded{
+	margin:0 auto;
+/*	margin-top:38%;  can;t have this it is hard coded */
+}
+
+/* carrousel fix for carrousel when not T3 templates */
+/** Correction for template which are not T3 */
+.carrouselPanel > div{
+	min-height:420px;
+}
+.panel-default{
+	margin-top:0 !important;
+}
+.controls {
+	position:relative;
+}
+
+.controls a:hover{
+	background:none !important;
+	box-shadow:none !important;
+}
+.carousel-control.left, .carousel-control.right{
+	background-image:none !important;
+	background-color:#CCC !important;
+	width:40px !important;
+	height:40px !important;
+	text-align:center;
+	border-radius:20px;
+	border:1px solid #999;
+	top:45% !important;
+}
+
+/*
+.glyphicon-chevron-left{
+	top:8px !important;
+	left:8px !important;
+}
+.glyphicon-chevron-right{
+	top:8px !important;
+	right:8px !important;
+}
+*/
+
+a.carousel-control span.fa-chevron-left, a.carousel-control span.fa-chevron-right{
+	font-size:20px;
+	float:left;
+	margin-top:9px;
+	margin-left:12px;
+}
+
+/* breadcrumb */
+div.breadcrumb{
+margin-bottom: 20px;
+}
+ol.breadcrumb{
+margin-left: 20px;
+margin-right: 20px;
+}
+
+div#siteVendor .siteName{
+	display: inline-flex;
+    width: 100%;
+}
+div#siteVendor .siteRating{
+    width: 100%;
+}
+
+/* simplified listing of items */
+.itemSimplified .siteImage, .itemSimplified .siteRightInfo {
+	float:left;
+    padding:5px;
+}
+
+div.popoverCat{
+display: none;
+position: absolute;
+width: 280px;
+padding: 10px;
+background: white;
+color: #000000;
+border: 1px solid lightgray;
+font-size: 90%;
+z-index: 1000;
+}
+
+
+/* style for the carrousel on the image */
+#products .carousel-control {
+	width: 30px !important;
+	height: 30px !important;
+	margin-top: -15px;
+	z-index: 1337;
+	top: 50% !important;
+	line-height: 25px;
+	font-size: 30px;
+}
+#products .carousel-control.left {
+	left: -20px;
+}
+#products .carousel-control.right {
+	right: -20px;
+}
+#bigcarousel > .carousel-inner {
+	margin-bottom: 2em;
+	position: relative;
+	text-align: center;
+}
+#bigcarousel > .carousel-inner > .item {
+	text-align: center;
+	width: 100;
+	position: relative;
+	height: 100%;
+}
+#bigcarousel > .carousel-inner > .item div.img {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#bigcarousel > .carousel-inner > .item > .image {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+}
+#bigcarousel img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+#siteImage > #ImageBox > .col-sm-10 {
+	width: 100%;
+	padding: 0 2em;
+}
+#siteImage > #ImageBox > .col-sm-10 {
+}
+#mycarousel .carousel-inner .row {
+	margin-left: 0;
+	text-align: center;
+}
+#mycarousel .carousel-inner .row .col {
+	display: inline-block;
+}
+#mycarousel .carousel-inner .row .col .thumbnail {
+	margin-bottom: 0;
+}
+#mycarousel .carousel-inner .row .col:hover {
+	cursor: pointer;
+}
+#siteMedia.col-md-6 {
+	width: auto;
+}
+
+span.resetFilter{
+   color: white;
+   margin-left: 5px;
+   margin-right: 5px;
+   height:20px;
+   vertical-align: middle;
+}
+span.resetFilter a{
+   color: white;
+   padding-left: 5px;
+}
+
+#searchFilter{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+#siteCountDown{
+	display: inline-flex;
+}
+/* Che Added Jan.15, 2015. This is to add a style for the Total price  */
+.priceTotal {
+color: #ff8182;
+font-size: 1.6em;
+font-weight: bold;
+}
+.itemspriceNew {
+font-size:1.4em; /* Che fix replaced font-size:1.2em;  */
+}

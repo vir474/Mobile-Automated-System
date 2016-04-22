@@ -1,0 +1,23 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.ionic.keyboard": {},
+        "me.apla.cordova.app-preferences": {},
+        "org.apache.cordova.file": {},
+        "org.apache.cordova.device": {},
+        "org.apache.cordova.splashscreen": {},
+        "org.apache.cordova.network-information": {},
+        "org.apache.cordova.globalization": {},
+        "org.apache.cordova.camera": {},
+        "org.apache.cordova.media-capture": {},
+        "org.apache.cordova.statusbar": {},
+        "org.apache.cordova.inappbrowser": {}
+    },
+    "dependent_plugins": {}
+}

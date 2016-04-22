@@ -1,0 +1,12 @@
+div#accordionVertical h3.accordionVerticalActive,div#accordionVertical h3.accordionVerticalInactive{cursor:pointer;font-size:12pt;margin:0;}
+div#accordionVertical{border:1px solid #f2f2f2!important;width:100%;}
+div#accordionVertical div.accordionVerticalElementInner{padding:15px;margin:0px;background-color:#fff;position:relative;}
+div#accordionVertical h3.accordionVerticalActive,div#accordionVertical h3.accordionVerticalActive span.accordionVerticalInnerSpan,
+div#accordionVertical h3.accordionVerticalInactive,div#accordionVertical h3.accordionVerticalInactive span.accordionVerticalInnerSpan
+{background:url(../images/accordion/ver-slide.png) no-repeat 0 0;height:53px;}
+div#accordionVertical h3.accordionVerticalActive,div#accordionVertical h3.accordionVerticalInactive{margin-right:51px;margin-left:-2px;}
+div#accordionVertical h3.accordionVerticalInactive span.accordionVerticalInnerSpan,div#accordionVertical h3.accordionVerticalActive span.accordionVerticalInnerSpan
+{display:block;margin-right:-52px;overflow:hidden;padding:14px 0 0 14px;height:39px;}
+div#accordionVertical h3.accordionVerticalActive{background-position:0 -65px;}
+div#accordionVertical h3.accordionVerticalInactive span.accordionVerticalInnerSpan{background-position:100% -126px;}
+div#accordionVertical h3.accordionVerticalActive span.accordionVerticalInnerSpan{background-position:100% -191px;}

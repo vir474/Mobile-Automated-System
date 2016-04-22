@@ -1,0 +1,31 @@
+<style>
+    ion-nav-view {
+        background-color: transparent;
+    }
+    /* // Error elements */    
+    .elementerr {
+        border-left-color: #ef4e3a;
+        border-left-style: solid;
+        border-left-width: thick;
+    }
+</style>
+<ion-header-bar class="bar bar-positive"> 
+    <h1 class="title"> Specify URL </h1>
+</ion-header-bar>
+<ion-content padding="true">
+    <div id="validateurl"></div>
+    <div class="card">
+        <div class="item item-text-wrap"> Please enter the full URL of your website ( e.g.: http://www.mywebsite.com ) </div>
+    </div>    
+    <div class="card">
+     <div class="list list-inset">
+          <label class="item item-input">
+                <input id="appurltext" type="text" placeholder="Enter the URL of the website">
+          </label>
+     </div>
+     <div>
+        <button class="button button-block button-balanced" on-tap="submitUrl()">Submit</button>
+     </div>
+    </div>
+    
+</ion-content>

@@ -1,0 +1,300 @@
+/* ========= BASKET AND CHECKOUT FLOW ================================================ */
+
+.checkOutCont{
+	floar:right;
+}
+
+div.leftAlign{
+	text-align:left;
+	float:left;
+	width:140px;
+	padding:5px;
+}
+
+div.centerColon{padding-left:5px;padding-right:5px;}
+div.rightAlign{
+	text-align:right;
+	float:right;
+	width:150px;
+	padding:5px;
+	}
+div.underlineSpace{border-bottom:1px solid grey;}
+div#checkOutEmail{clear:both;overflow:hidden;width:290px;float:right;padding:10px 10px 40px;}
+#checkOutEmail span.text.jberror{display:block;margin-left:0!important;}
+.boldText{font-weight:bold;font-size:1.2em;color:#3f3f3f;}
+
+.totalSeparate{
+	clear:both;
+	width: 350px;
+	float:right;
+	padding: 5px 15px;
+	}
+
+div#checkOutCont{
+	clear:both;
+	font-size:12px;
+	width:100%;
+	float:right;
+	padding:10px;
+	}
+.requieredText{color:#ff0101;font-style:italic;}
+
+.checkOutTotal{
+padding-bottom:25px;
+}
+
+.couponTitle{
+margin-top: 10px!important;
+margin-left: 0!important;
+}
+.couponArea{
+	width:300px;
+}
+
+#couponAction{
+width:200px;
+min-height: 28px;
+}
+
+/* make sure the input box looks good */
+.form-control{
+min-height: 28px;
+}
+
+.deleteRefresh{
+padding-top: 6px;
+}
+
+a.addQty{
+	text-decoration:none;
+    background-color: #9E9E9E;
+    border-radius: 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    height: 17px;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    width: 17px;
+    /*margin-left: 35px;*/
+    margin-left: 2px;
+}
+.quantity input{
+	float:left;
+	height:auto !important;
+}
+.couponAdd{
+	height:auto !important;
+}
+
+.qtyUp{
+	margin-top: -4px;
+}
+.qtyDown{
+	margin-top: 14px;
+}
+
+#processCreditCard{
+	float:left;
+}
+
+#checkOutList{
+margin-top:30px;
+}
+
+.termsConditions{
+	float:right;
+	min-width: 300px;
+	padding-top: 20px;
+}
+.termsConditions .checkBoxAlign .btn{
+border-color:white;	
+}
+
+/* aligment of header of table */
+.wzbasket_basket_checkout_fe .table th, .wzbasket_basket_placeorder .table th, .wzbasket_shipping_carrier_rate .table th{
+text-align:center;
+}
+
+#giftPanel div.panel-body{
+padding:15px 29px 0;
+}
+
+#noteBox{
+   padding-bottom: 15px;
+}
+
+
+
+/* Checkout Wizard */
+.basketTrail{
+	padding: 20px 0;
+	display: inline-flex;
+}
+
+.wizard {
+	text-align: center;
+	width: 100%;
+}
+	
+.wizard a {
+    padding: 10px 12px 10px;  
+    margin-right: 5px;
+    background: #efefef;
+    position: relative;
+    display: inline-block;
+}
+
+.wizard a:hover {
+	text-decoration:none;
+}
+
+.wizard a:before {
+    width: 0;
+    height: 0;
+    border-top: 20px inset transparent;
+    border-bottom: 20px inset transparent;
+    border-left: 20px solid #fff;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+}
+.wizard a:after {
+    width: 0;
+    height: 0;
+    border-top: 20px inset transparent;
+    border-bottom: 20px inset transparent;
+    border-left: 20px solid #efefef;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -20px;
+    z-index: 2;
+}
+.wizard a:first-child:before,
+.wizard a:last-child:after {
+    border: none;
+}
+.wizard a:first-child {
+    -webkit-border-radius: 4px 0 0 4px;
+       -moz-border-radius: 4px 0 0 4px;
+            border-radius: 4px 0 0 4px;
+}
+.wizard a:last-child {
+    -webkit-border-radius: 0 4px 4px 0;
+       -moz-border-radius: 0 4px 4px 0;
+            border-radius: 0 4px 4px 0;
+}
+.wizard .badge {
+    margin: 0 5px 0 18px;
+    position: relative;
+    top: -1px;
+}
+.wizard a:first-child .badge {
+    margin-left: 0;
+}
+.wizard .current {
+    background: #007ACC;	/* color of the breadcrumb */
+    color: #fff;
+}
+.wizard .current:after {
+    border-left-color: #007ACC;	/* color of the breadcrumb */
+}
+
+
+/* basket module */
+/* Basket Total Text [ Display Type ( SLIDER ) ]*/
+div.cartModTotalWrap{float:right;clear:both;padding:10px 20px}
+.cartModTotalText { 
+ padding-top:11px; 
+ font-weight:bold; 
+ margin-right:10px!important;
+}
+.cartModTotal{
+color:#A7002E;
+font-size:1.2em;
+font-weight: bold;
+}
+
+div.cartModImg{
+	width:auto!important;
+}
+.cartModImg{float:left;}
+.cartModImg img{width:25px;height:25px;}
+
+/* Product Unitprice in Basket Module */
+.cartModUnitPrice {
+ white-space:nowrap;
+ vertical-align:top;
+ margin-left:10px;
+}
+.cartModUnitPrice div.productTax, .cartModPrice div.productTax{
+ display:block;
+ margin-left:5px;
+}
+span.productTax{
+margin-left:5px;
+}
+.cartModName {
+	float:left;
+vertical-align:top;
+font-weight:bold;
+font-size:1.1em;
+margin-left: 10px;
+}
+.cartModDetails{
+padding-bottom:8px;
+}
+
+.cartModTotal{
+color:#A7002E;
+font-size:1.2em;
+font-weight: bold;
+}
+
+.cartModSep{
+padding:8px 3px 8px !important;
+}
+.cartModSubTotal div,.cartModDetails div{
+display: inline-block;
+}
+.cartModDetails div.cartModOption{
+display:block;margin-left: 30px!important;
+}
+
+.cartModQty{
+vertical-align:top;
+display: inline-flex !important;
+}
+
+
+/* Product Name Text in Basket Module */
+.carModName{vertical-align:top;padding-left:5px;}
+.carModName span {
+ height:20px;
+ overflow:hidden;
+}
+
+
+/* Product Quantity Box in Basket Module */
+.cartModQty input {
+background-color:transparent;
+	width: 20px;
+	height: 25px;
+	margin-left: 5px;
+    margin-right: 5px;	
+}
+
+/* Product Price in Basket Module */
+.cartModPrice {
+ font-weight:bold;
+ color: #af0030;
+ font-size:1.1em;
+ white-space:nowrap;
+}
+
+#checkOutList table{ 
+	clear: both; 
+}
